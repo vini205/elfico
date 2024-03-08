@@ -1,0 +1,92 @@
+@font-face {
+    font-family: 'Rellic';
+    src: url("fonts/Rellanic.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'RellicBold';
+    src: url("fonts/Rellanic\ Bold.otf") format("opentype");
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'RellicBoldItalic';
+    src: url("fonts/Rellanic\ Bold\ Italic.otf.otf") format("opentype");
+    font-weight: bold;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'RellicItalic';
+    src: url("fonts/Rellanic\ Italic.otf.otf") format("opentype");
+    font-weight: normal;
+    font-style: italic;
+}
+p.elfico{
+    font-family: Rellic;
+    font-size: 2em;
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 2px 5px rgb(255, 14, 14);
+    font-family: url('Rellanic\ Bold\ Italic.otf') ;
+}
+
+.title{
+    font-size: 2em;
+    font-family: Alice;
+    text-align: center;
+    background-color: rgb(96, 250, 96);
+    border-radius: 10px;
+    padding: 5px;
+    max-width:700px;
+    margin: 20px auto;
+}
+label{
+    font-family: Alice;
+    text-align: center;
+    display: block;
+    font-size: 1.5em;
+    margin: 20px;
+}
+input{
+    font-size: 1.5em;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px;
+    font-family: Alice;
+    border: solid 1px;
+}
+section{
+    border: solid 1px;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: rgba(46, 255, 46, 0.849);
+    max-width:700px;
+    margin: auto;
+}
+#res{
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.137);
+    border-radius: 10px;
+    padding:5px 0;
+    
+}
+* {
+    transition: all 1s;
+}
+@media screen and (max-width:700px) {
+    body{
+        background-image: url('img/fundo.png');
+        background-size: cover;
+        background-repeat: repeat-y;
+        background-size: 300%;       
+    
+    }
+}
+@media screen and (min-width:700px) {
+    body{
+        background-image: url('img/fundo.png');
+        background-position: center top;
+        background-size: 200%;        
+        background-repeat: repeat-y;
+    }   
+}
