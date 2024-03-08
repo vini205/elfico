@@ -65,6 +65,9 @@ p.alfabeto{
     outline: none;
     border-radius: 0px;
     font-family: var(--font);
+    display: block;
+    margin: auto;
+    font-size: 1em;
 }
 label{
     font-family: var(--font);

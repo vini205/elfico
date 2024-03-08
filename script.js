@@ -54,9 +54,10 @@ function draconica() {
     root.setProperty('--lingua','Iokharic');
     root.setProperty('--shadowColor','white')
     root.setProperty('--font','Alice')
-    root.setProperty('--resColor','rgba(0,0,0,0.5)')
-    root.setProperty('--background','url("img/fundoDraconica.webp")')
+    root.setProperty('--resColor','rgba(0,0,0,0.1)')
+    root.setProperty('--background','url("img/fundoDraconica.avif")')
     title.textContent = 'Transformar textos para a lingua Dracônica'
     alfabetoName.textContent = 'Draconico'
     label.textContent = 'Digite o texto para traduzir em Dracônico'
+
 }
