@@ -33,6 +33,7 @@ function ana() {
     root.setProperty('--background','url("img/fundoAnao.jpeg")')
     root.setProperty('--resColor','rgba(0,0,0,0.137)')
     root.setProperty('--shadowColor','#ffffff')
+    root.setProperty('--font','Ubunto')
     title.textContent = 'Transformar textos para a lingua anã'
     alfabetoName.textContent = 'anaos'
     label.textContent = 'Digite o texto para traduzir na lingua anã'
@@ -43,6 +44,7 @@ function elfica() {
     root.setProperty('--background','url("img/fundo.png")')
     root.setProperty('--resColor','rgba(0,0,0,0.137)')
     root.setProperty('--shadowColor','#ffffff')
+    root.setProperty('--font','Alice')
     title.textContent = 'Transformar textos para a lingua Élfica'
     alfabetoName.textContent = 'Elfos'
     label.textContent = 'Digite o texto para traduzir em Élfico'
@@ -51,6 +53,7 @@ function draconica() {
     root.setProperty('--maincolor','#c40000a3');
     root.setProperty('--lingua','Iokharic');
     root.setProperty('--shadowColor','white')
+    root.setProperty('--font','Alice')
     root.setProperty('--resColor','rgba(0,0,0,0.5)')
     root.setProperty('--background','url("img/fundoDraconica.webp")')
     title.textContent = 'Transformar textos para a lingua Dracônica'
