@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Rellic';
-    src: url("fonts/Rellanic.otf") format("opentype");
+    src: url("fonts/rellanic/Rellanic.otf") format("opentype");
     font-weight: normal;
     font-style: normal;
 }
@@ -22,26 +22,52 @@
     font-weight: normal;
     font-style: italic;
 }
-p.elfico{
-    font-family: Rellic;
+@font-face {
+    font-family: 'Davek';
+    src: url('fonts/davek/Davek.otf');
+}
+@font-face {
+    font-family: 'Iokharic';
+    src: url('fonts/iokharic/Iokharic.otf');
+}
+
+:root{
+    --lingua: 'Rellic';
+    --maincolor:rgb(96, 250, 96);
+    --background: url('img/fundo.png');
+    --resColor:rgba(0, 0, 0, 0.137);
+    --shadowColor: #ffffff;
+    --font:Alice;
+}
+
+p.alfabeto{
+    font-family: var(--lingua);
     font-size: 2em;
     color: rgb(0, 0, 0);
-    text-shadow: 1px 2px 5px rgb(255, 14, 14);
-    font-family: url('Rellanic\ Bold\ Italic.otf') ;
+    text-shadow: 1px 2px 15px var(--shadowColor);
 }
 
 .title{
     font-size: 2em;
-    font-family: Alice;
+    font-family: var(--font);
     text-align: center;
-    background-color: rgb(96, 250, 96);
+    background-color: var(--maincolor);
     border-radius: 10px;
     padding: 5px;
     max-width:700px;
     margin: 20px auto;
 }
+#alfabeto{
+    background-color: var(--maincolor);
+    color: black;
+    padding: 5px;
+    border: 1px solid var(--resColor);
+    outline: none;
+    border-radius: 0px;
+    font-family: var(--font);
+}
 label{
-    font-family: Alice;
+    font-family: var(--font);
     text-align: center;
     display: block;
     font-size: 1.5em;
@@ -52,20 +78,21 @@ input{
     width: 100%;
     box-sizing: border-box;
     padding: 5px;
-    font-family: Alice;
+    font-family: var(--font);
     border: solid 1px;
+    outline: none;
 }
 section{
     border: solid 1px;
     border-radius: 10px;
     padding: 5px;
-    background-color: rgba(46, 255, 46, 0.849);
+    background-color: var(--maincolor);
     max-width:700px;
     margin: auto;
 }
 #res{
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.137);
+    background-color:var(--resColor) ;
     border-radius: 10px;
     padding:5px 0;
     
@@ -75,7 +102,7 @@ section{
 }
 @media screen and (max-width:700px) {
     body{
-        background-image: url('img/fundo.png');
+        background-image: var(--background);
         background-size: cover;
         background-repeat: repeat-y;
         background-size: 300%;       
@@ -84,7 +111,7 @@ section{
 }
 @media screen and (min-width:700px) {
     body{
-        background-image: url('img/fundo.png');
+        background-image: var(--background);
         background-position: center top;
         background-size: 200%;        
         background-repeat: repeat-y;

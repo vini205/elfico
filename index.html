@@ -11,14 +11,19 @@
 </head>
 <body>
     <p class="title">Transformar textos em linguagem Élfica</p>
-    <p class="elfico title">
+    <select name="alfabeto" id="alfabeto">
+        <option value="elfica">Élfico</option>
+        <option value="draconica">Dracônica</option>
+        <option value="ana">Anã</option>
+    </select>
+    <p class="alfabeto title">
         ELFOS
     </p>
 <section>
     
         <label for="texto">Digite o texto para traduzir em élfico</label>
-        <input type="text" id="txt" placeholder="Digite aqui">
-        <p id="res"  class="elfico"></p>
+        <input  type="text" id="txt" placeholder="Digite aqui" autocomplete="off">
+        <p id="res"  class="alfabeto"></p>
 </section>
 
     <script src="script.js"></script>
