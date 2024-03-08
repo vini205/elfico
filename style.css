@@ -120,3 +120,7 @@ section{
         background-repeat: repeat-y;
     }   
 }
+.dracon{
+    background-position: top;
+    background-size: 200% 130%;
+}

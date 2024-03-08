@@ -10,6 +10,7 @@ alfabeto.addEventListener('change', mudarAlfabeto);
 
 function mudarAlfabeto() {
    let a = alfabeto.value;
+   document.body.classList.remove('dracon')
    switch (a) {
     case 'elfica':
         elfica()
@@ -56,8 +57,8 @@ function draconica() {
     root.setProperty('--font','Alice')
     root.setProperty('--resColor','rgba(0,0,0,0.1)')
     root.setProperty('--background','url("img/fundoDraconica.avif")')
+    document.body.classList.add('dracon')
     title.textContent = 'Transformar textos para a lingua Dracônica'
     alfabetoName.textContent = 'Draconico'
     label.textContent = 'Digite o texto para traduzir em Dracônico'
-
 }
