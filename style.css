@@ -30,6 +30,14 @@
     font-family: 'Iokharic';
     src: url('fonts/iokharic/Iokharic.otf');
 }
+@font-face {
+    font-family:'Minecraft Regular' ;
+    src: url("fonts/minecraft/MinecraftRegular-Bmg3.otf");
+}
+@font-face {
+    font-family: 'StandardGalactic';
+    src: url(  "fonts/minecraft/StandardGalacticAlphabet-Regular.ttf");
+}
 
 :root{
     --lingua: 'Rellic';
@@ -37,7 +45,8 @@
     --background: url('img/fundo.png');
     --resColor:rgba(0, 0, 0, 0.137);
     --shadowColor: #ffffff;
-    --font:Alice;
+    --font:serif;
+    --borderRadius: 10px;
 }
 
 p.alfabeto{
@@ -46,13 +55,48 @@ p.alfabeto{
     color: rgb(0, 0, 0);
     text-shadow: 1px 2px 15px var(--shadowColor);
 }
-
+.index{
+    font-size: 2em;
+    display: block  ;
+    font-family:sans-serif;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    background-color: #d8e73194;
+    border-radius: 2px;
+    padding: 5px;
+    max-width:700px;
+    margin: 20px auto;
+}
+p> a.link{
+    font-size: 30px;
+    text-decoration: none;
+    background-color: #68686894;
+    border-radius: 10px;
+    padding: 2px;
+    color: black;
+    margin: 4px;
+    border: double 3px rgb(0, 0, 0);
+}
+a:hover{
+    text-decoration: none;
+    background-color: #fdffe194;
+    border-radius: 10px;
+    padding: 2px;
+    margin: 4px;
+}
+ul.index{
+    display: block  ;
+    font-size: 1em;
+}
+li{
+    list-style: none;
+}
 .title{
     font-size: 2em;
     font-family:var(--font);
     text-align: center;
     background-color: var(--maincolor);
-    border-radius: 10px;
+    border-radius: var(--borderRadius);
     padding: 5px;
     max-width:700px;
     margin: 20px auto;
@@ -87,7 +131,7 @@ input{
 }
 section{
     border: solid 1px;
-    border-radius: 10px;
+    border-radius: var(--borderRadius);
     padding: 5px;
     background-color: var(--maincolor);
     max-width:700px;
@@ -96,8 +140,12 @@ section{
 #res{
     text-align: center;
     background-color:var(--resColor) ;
-    border-radius: 10px;
+    border-radius: var(--borderRadius);
     padding:5px 0;
+    
+}
+body.galactic{
+    border-radius: 0!important ;
     
 }
 * {

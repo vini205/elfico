@@ -11,6 +11,7 @@ alfabeto.addEventListener('change', mudarAlfabeto);
 function mudarAlfabeto() {
    let a = alfabeto.value;
    document.body.classList.remove('dracon')
+   document.body.classList.remove('galactic')
    switch (a) {
     case 'elfica':
         elfica()
@@ -20,6 +21,9 @@ function mudarAlfabeto() {
         break;
     case 'ana':
         ana()
+        break;
+    case 'Minecraft':
+        minecraft()
         break;
    } 
 }
@@ -35,6 +39,7 @@ function ana() {
     root.setProperty('--resColor','rgba(0,0,0,0.137)')
     root.setProperty('--shadowColor','#ffffff')
     root.setProperty('--font','Ubunto')
+    root.setProperty('--borderRadius','10px')
     title.textContent = 'Transformar textos para a lingua anã'
     alfabetoName.textContent = 'anaos'
     label.textContent = 'Digite o texto para traduzir na lingua anã'
@@ -46,6 +51,7 @@ function elfica() {
     root.setProperty('--resColor','rgba(0,0,0,0.137)')
     root.setProperty('--shadowColor','#ffffff')
     root.setProperty('--font','Alice')
+    root.setProperty('--borderRadius','10px')
     title.textContent = 'Transformar textos para a lingua Élfica'
     alfabetoName.textContent = 'Elfos'
     label.textContent = 'Digite o texto para traduzir em Élfico'
@@ -56,9 +62,25 @@ function draconica() {
     root.setProperty('--shadowColor','white')
     root.setProperty('--font','Alice')
     root.setProperty('--resColor','rgba(0,0,0,0.1)')
-    root.setProperty('--background','url("img/fundoDraconica.avif")')
+    root.setProperty('--background','url("img/fundoDraconica.jpg    ")')
+    root.setProperty('--borderRadius','10px')
     document.body.classList.add('dracon')
     title.textContent = 'Transformar textos para a lingua Dracônica'
     alfabetoName.textContent = 'Draconico'
     label.textContent = 'Digite o texto para traduzir em Dracônico'
 }
+function minecraft() {
+    root.setProperty('--maincolor','#4cdf17a3');
+    root.setProperty('--lingua','StandardGalactic');
+    root.setProperty('--shadowColor','white')
+    root.setProperty('--font','Minecraft Regular')
+    root.setProperty('--resColor','rgba(0,0,0,0.1)')
+    root.setProperty('--background','url("img/minecraft2.jpg    ")')
+    root.setProperty('--borderRadius','0')
+    
+    
+    title.textContent = 'Transformar textos para a escrita do Minecraft'
+    alfabetoName.textContent = 'Alfabeto de encantamento'
+    label.textContent = 'Digite o texto para traduzir'
+}
+
